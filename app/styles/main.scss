@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$primary-color: #00c4b3;
+$san-serif-font: 'Raleway', Helvetica, sans-serif;
+$serif-font: 'Rokkitt', serif;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  color: white;
+  font-family: $serif-font;
+  font-size: 20px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: $san-serif-font;
+}
+
+.box {
+  margin-bottom: 30px;
+}
+.header-box,
+.footer,
+.help-us {
+  background-color: $primary-color;
+}
+.header-box {
+  p {
+    margin: 20px;
+    font-weight: 700;
+    font-family: $san-serif-font;
+  }
+/*  .logo-box {
+    height: 218px;
+  }*/
+  .logo-box img {
+    max-height: 175px;
+    width: auto;
+  }
+}
+.row1 .copy-box {
+  padding: 25px;
+}
+.copy-box {
+  padding: 25px 50px;
+  text-align: center;
+  font-weight: 400;
+}
+.express,
+.co-create,
+.inspire {
+  p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+}
+.express {
+  background-color: #f44c4d;
+}
+.co-create {
+  background-color: #f5a2db;
+}
+.inspire {
+  background-color: #1645b2;
+}
+.help-us {
+  text-align: left;
+  padding: 25px 50px;
+  line-height: 1.1;
+}
+.help-us {
+  p {
+    margin-top: 15px;
+  }
+  .beta-btn {
+    height: 58px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .beta-btn img {
+    max-height: 80%;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 10px 0 20px;
+}
+.contact {
+  h3 {
+    font-family: $san-serif-font;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  p {
+    line-height: 1.1;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #02635b;
+  }
+}
+.social {
+  margin-top: 20px;
+}
+.social-icons {
+  list-style-type: none;
+  margin: 15px 0;
+  padding: 0;
+}
+.social-icons {
+  li {
+    float: left;
+  }
+  a {
+    display: block;
+    height: 31px;
+  }
+}
+
+.facebook-icon {
+  width: 27px;
+  background-image: url(../images/facebook-icon.png);
+}
+.twitter-icon {
+  width: 47px;
+  background-image: url(../images/twitter-icon.png);
+}
+.instagram-icon {
+  width: 47px;
+  background-image: url(../images/instagram-icon.png);
+}
+.youtube-icon {
+  width: 52px;
+  background-image: url(../images/youtube-icon.png);
+}
+.pinterest-icon {
+  width: 44px;
+  background-image: url(../images/pinterest-icon.png);
+}
+
+a.facebook-icon:hover {
+  background-image: url(../images/facebook-icon-on.png);
+}
+a.twitter-icon:hover {
+  background-image: url(../images/twitter-icon-on.png);
+}
+a.instagram-icon:hover {
+  background-image: url(../images/instagram-icon-on.png);
+}
+a.youtube-icon:hover {
+  background-image: url(../images/youtube-icon-on.png);
+}
+a.pinterest-icon:hover {
+  background-image: url(../images/pinterest-icon-on.png);
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .header-box {
+    p {
+      margin: 20px 50px;
+      font-size: 24px;
+    }
+    .logo-box img {
+      max-height: 195px;
+      width: auto;
+    }
+  }
+  .top-photo-1 img,
+  .top-photo-2 img {
+    min-height: 338px;
+  }
+  .help-us .beta-btn {
+    text-align: right;
+  }
+  .help-us .beta-btn img {
+    max-height: 90%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 32px;
+  }
+  .header-box {
+    p {
+      margin: 30px 100px;
+      font-size: 28px;
+    }
+    .logo-box img {
+      max-height: 218px;
+      width: auto;
+    }
+  }
+  .box {
+    margin-bottom: 0;
+  }
+  .epic-content .row {
+    margin: 25px 0;
+  }
+  .contact {
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .help-us {
+    min-height: 402px;
+  }
+  .help-us .beta-btn img {
+    max-height: 100%;
+  }
+}
+
+
+
